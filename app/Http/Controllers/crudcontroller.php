@@ -6,16 +6,11 @@ use Illuminate\Http\Request;
 
 class crudcontroller extends Controller
 {
-    public function user_add() {
+    public function user_add(Request $request) {
 
-        $request->post('title');
-        $request->post('nama');
-        $request->post('unit');
-        $request->post('jabatan');
-        $request->post('level');
-        $request->post('paswd');
-        $request->post('repasswd');
+        $data=$request->all();
 
-        echo("tersimpan");
+        return json_encode($data);
+        //echo("tersimpan");
     }
 }
