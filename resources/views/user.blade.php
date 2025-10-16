@@ -55,7 +55,7 @@
                         </select>
                         </div>
                         <div class="form-group">
-                        <select class="form-control-item form-select gender" name="fungi" required>
+                        <select class="form-control-item form-select gender" name="fungsi" required>
                             <option selected>Fungsi Kerja</option>
                             <option value="1">MANAGER</option>
                             <option value="2">DOKTER</option>
