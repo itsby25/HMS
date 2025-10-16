@@ -9,8 +9,8 @@ class crudcontroller extends Controller
     public function user_add(Request $request) {
 
         $data=$request->all();
-
+        echo("tersimpan");
         return json_encode($data);
-        //echo("tersimpan");
+        
     }
 }
