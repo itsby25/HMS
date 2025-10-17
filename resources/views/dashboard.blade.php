@@ -273,7 +273,7 @@
                 <div class="card bg-gradient-danger card-img-holder text-white">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">LABORAT <i class="mdi mdi-microscope mdi-48px float-start"></i>
+                    <h4 class="font-weight-normal mb-3">LABORAT | LIMS <i class="mdi mdi-microscope mdi-48px float-start"></i>
                     </h4>
                                      
                   </div>
@@ -293,7 +293,7 @@
                 <div class="card bg-gradient-success card-img-holder text-white">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">RADIOLOGY <i class="mdi mdi-radioactive mdi-48px float-start"></i>
+                    <h4 class="font-weight-normal mb-3">RADIOLOGY | RIS <i class="mdi mdi-radioactive mdi-48px float-start"></i>
                     </h4>
                     
                   </div>
