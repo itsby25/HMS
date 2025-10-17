@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class hrmsmodel extends Model
 {
-    //
+    use HasFactory;
 }
