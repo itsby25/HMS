@@ -1,2 +1,2 @@
-# HRMS
+# HMS
 Hospital Resources Management System
