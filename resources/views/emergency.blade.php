@@ -614,7 +614,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
-                           <td><button class="btn btn-info"></button></td>
+                           
                         </tr>
                         <tr class="table-warning">
                             <td></td>
@@ -624,7 +624,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                            <td><button class="btn btn-info"></button></td>
-                            <td><button class="btn btn-info"></button></td>
+                          
                         </tr>
                         <tr class="table-danger">
                             <td></td>
@@ -634,7 +634,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
-                           <td><button class="btn btn-info"></button></td>
+                       
                         </tr>
                         <tr class="table-success">
                             <td></td>
@@ -644,7 +644,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
-                           <td><button class="btn btn-info"></button></td>
+                        
                         </tr>
                         <tr class="table-primary">
                             <td></td>
@@ -654,7 +654,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
-                           <td><button class="btn btn-info"></button></td>
+                      
                         </tr>
                       </tbody>
                     </table>
