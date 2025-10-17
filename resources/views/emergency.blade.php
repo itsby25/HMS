@@ -609,7 +609,7 @@
                         <tr class="table-info">
                           <td></td>
                           <td></td>
-                          <td><button class="btn btn-info"></button> </td>
+                          <td><button class="btn btn-success"></button><button class="btn btn-warning"></button><button class="btn btn-danger"></button><button class="btn btn-secondary"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
@@ -619,7 +619,7 @@
                         <tr class="table-warning">
                             <td></td>
                           <td></td>
-                          <td><button class="btn btn-info"></button> </td>
+                          <td><button class="btn btn-success"></button><button class="btn btn-warning"></button><button class="btn btn-danger"></button><button class="btn btn-secondary"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
@@ -628,7 +628,7 @@
                         <tr class="table-danger">
                             <td></td>
                           <td></td>
-                          <td><button class="btn btn-info"></button> </td>
+                          <td><button class="btn btn-success"></button><button class="btn btn-warning"></button><button class="btn btn-danger"></button><button class="btn btn-secondary"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
@@ -637,7 +637,7 @@
                         <tr class="table-success">
                             <td></td>
                           <td></td>
-                          <td><button class="btn btn-info"></button> </td>
+                          <td><button class="btn btn-success"></button><button class="btn btn-warning"></button><button class="btn btn-danger"></button><button class="btn btn-secondary"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
@@ -646,7 +646,7 @@
                         <tr class="table-primary">
                             <td></td>
                           <td></td>
-                          <td><button class="btn btn-info"></button> </td>
+                          <td><button class="btn btn-success"></button><button class="btn btn-warning"></button><button class="btn btn-danger"></button><button class="btn btn-secondary"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
