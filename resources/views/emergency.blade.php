@@ -591,7 +591,7 @@
               <div class="col-lg-12 stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Data Pasien IGD Hari Ini</h4>                    
+                    <h4 class="card-title">Data Pasien IGD Hari Ini</h4>                                
                     <table class="table table-bordered">
                       <thead>
                         <tr>
@@ -603,6 +603,7 @@
                           <th> Observasi </th>
                           <th> Informed Concern </th>
                           <th> Status </th>
+                          <th> Informed Concern </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -614,7 +615,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
-
+                           <td><button class="btn btn-info"></button></td>
                         </tr>
                         <tr class="table-warning">
                             <td></td>
@@ -624,6 +625,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                            <td><button class="btn btn-info"></button></td>
+                            <td><button class="btn btn-info"></button></td>
                         </tr>
                         <tr class="table-danger">
                             <td></td>
@@ -633,6 +635,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
+                           <td><button class="btn btn-info"></button></td>
                         </tr>
                         <tr class="table-success">
                             <td></td>
@@ -642,6 +645,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
+                           <td><button class="btn btn-info"></button></td>
                         </tr>
                         <tr class="table-primary">
                             <td></td>
@@ -651,6 +655,7 @@
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
                           <td><button class="btn btn-info"></button></td>
+                           <td><button class="btn btn-info"></button></td>
                         </tr>
                       </tbody>
                     </table>
