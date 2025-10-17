@@ -603,7 +603,6 @@
                           <th> Observasi </th>
                           <th> Informed Concern </th>
                           <th> Status </th>
-                          <th> Informed Concern </th>
                         </tr>
                       </thead>
                       <tbody>
