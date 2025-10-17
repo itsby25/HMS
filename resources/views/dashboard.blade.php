@@ -225,12 +225,13 @@
           <div class="row">
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-danger card-img-holder text-white">
-                  <div class="card-body">
+                <a href="main" class="text-white nav-link">  
+                <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">REGISTRATION <br><i class="mdi mdi-account-supervisor-circle-outline mdi-48px float-start"></i>
-                    </h4>
-                                
+                    </h4>                    
                   </div>
+                </a> 
                 </div>
               </div>
               <div class="col-md-3 stretch-card grid-margin">
@@ -238,8 +239,7 @@
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">EMERGENCY <br><i class="mdi mdi-heart-pulse mdi-48px float-start"></i>
-                    </h4>
-                    
+                    </h4>               
                   </div>
                 </div>
               </div>
@@ -248,8 +248,7 @@
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">OUT PATIENT <i class="mdi mdi-walk mdi-48px float-start"></i>
-                    </h4>
-                   
+                    </h4>    
                   </div>
                 </div>
               </div>
