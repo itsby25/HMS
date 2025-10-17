@@ -206,13 +206,13 @@
                   </li>
                 </ul>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../docs/documentation.html" target="_blank">
-                <span class="menu-title">Documentation</span>
-                <i class="mdi mdi-file-document-box menu-icon"></i>
-              </a>
             </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">
+                <span class="menu-title">SETTING SETUP</span>
+                <i class="mdi mdi-cog menu-icon"></i>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- partial -->
@@ -258,7 +258,7 @@
                 <div class="card bg-gradient-secondary card-img-holder text-white">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">IN PATIENT <i class="mdi mdi-medical-bag mdi-48px float-start"></i>
+                    <h4 class="font-weight-normal mb-3">IN PATIENT <i class="mdi mdi-bed mdi-48px float-start"></i>
                     </h4>
                    
                   </div>
@@ -339,7 +339,7 @@
                 <div class="card bg-gradient-success card-img-holder text-white">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">RADIOLOGY | RIS <i class="mdi mdi-radioactive mdi-48px float-start"></i>
+                    <h4 class="font-weight-normal mb-3">SURGERY | OK <i class="mdi mdi-heart-pulse mdi-48px float-start"></i>
                     </h4>
                     
                   </div>
