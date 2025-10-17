@@ -236,11 +236,13 @@
               </div>
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-info card-img-holder text-white">
+                   <a href="igd" class="text-white nav-link"> 
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">EMERGENCY <br><i class="mdi mdi-heart-pulse mdi-48px float-start"></i>
                     </h4>               
                   </div>
+                  </a>
                 </div>
               </div>
               <div class="col-md-3 stretch-card grid-margin">
