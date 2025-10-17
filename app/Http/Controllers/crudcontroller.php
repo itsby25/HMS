@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use model;
+
 use Illuminate\Http\Request;
 
 class crudcontroller extends Controller
