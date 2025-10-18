@@ -31,16 +31,16 @@ class crudcontroller extends Controller
 
         //$data=$request->all();
         $urut= Pasien::all()->count();
-        if ($urut < 10)
+        if ($urut < 9)
         {
             $norm="00-00-00-0".$urut+1;
-        }else if ($urut > 10) 
+
+        }
+        else
         {
             $norm="00-00-00-".$urut+1;
-        }else if ($urut > 100)
-        {
-            $norm="00-00-0".$urut+1;
         }
+        
 
         echo $norm;
         $simpan= new Pasien();
