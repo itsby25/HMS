@@ -25,4 +25,24 @@ class crudcontroller extends Controller
         //return json_encode($data);
         
     }
+
+    public function patient_add(Request $request) {
+
+        //$data=$request->all();
+
+        $simpan= new Users();
+        $simpan->username = $request->nama;
+        $simpan->realname = $request->nama." ".$request->title;
+        $simpan->email = $request->email;
+        $simpan->kd_unit = $request->unit;
+        $simpan->level = $request->level;
+        $simpan->kd_fungsi = $request->fungsi;
+        $simpan->kd_jabatan = $request->jabatan;
+        $simpan->aktif = 1;
+        $simpan->password = md5($request->paswd);
+        $simpan->save();
+        echo("tersimpan");
+        //return json_encode($data);
+        
+    }
 }
