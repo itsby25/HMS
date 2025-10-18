@@ -19,3 +19,4 @@ Route::get('user',[maincontroller::class,'user_new']);
 
 
 Route::post('user_new',[crudcontroller::class,'user_add']);
+Route::post('pasien_new',[crudcontroller::class,'patient_add']);

@@ -31,7 +31,8 @@
     <main class="flex max-w-[335px] w-full flex-col-reverse lg:max-w-4xl lg:flex-row">
                 <div class="text-[13px] leading-[20px] flex-1 p-6 pb-12 lg:p-20 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d] rounded-bl-lg rounded-br-lg lg:rounded-tl-lg lg:rounded-br-none">
                     <div>
-                    <form method="post" action="patient/new">
+                    <form method="post" action="pasien_new">
+                    @csrf    
                     <h2>Form Registrasi Pasien Baru</h2>
                     <hr>               
                         <div class="form-group">
@@ -46,13 +47,13 @@
                             <input type="text" id="name" class="form-control item" name="nama" placeholder="Nama Lengkap" max="18" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="address" class="form-control item" name="alamat" placeholder="Alamat Lengkap" max="18" required>
+                            <input type="text" id="address" class="form-control item" name="alamat" placeholder="Alamat Lengkap" >
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="ktp" id="id" placeholder="No KTP (16 digit)" required>
+                            <input type="text" class="form-control item" name="ktp" id="id" placeholder="No KTP (16 digit)" max="16" >
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="noka" id="nokabpjs" placeholder="No Kartu BPJS" required>
+                            <input type="text" class="form-control item" name="noka" id="nokabpjs" placeholder="No Kartu BPJS" >
                         </div>
                         <div class="form-group">
                         <select class="form-control-item form-select gender" name="kd_asuransi" >
@@ -63,7 +64,7 @@
                         </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="no_polis_asuransi" id="no_polis" placeholder="No Polis Asuransi" required>
+                            <input type="text" class="form-control item" name="no_polis_asuransi" id="no_polis" placeholder="No Polis Asuransi" >
                         </div>
                         <div class="form-group">
                         <select class="form-control-item form-select gender" name="institusi" id="institusi">
@@ -74,7 +75,7 @@
                         </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="no_pegawai" id="nip" placeholder="No Induk Karyawan" required>
+                            <input type="text" class="form-control item" name="no_pegawai" id="nip" placeholder="No Induk Karyawan" >
                         </div>
                         <div class="form-group">
                         <select class="form-control-item form-select gender" name="kd_jk" id="kode_jenis_kelamin">
@@ -84,14 +85,14 @@
                         </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="email" id="email" placeholder="Email" required>
+                            <input type="text" class="form-control item" name="email" id="email" placeholder="Email" >
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control item" name="hp" id="phone-number" placeholder="No Telepon /Handphone (aktif)" required>
+                            <input type="number" class="form-control item" name="hp" id="phone-number" placeholder="No Telepon /Handphone (aktif)" >
                         </div>
                         <div class="form-group">
                             <legend><h6>Tanggal Lahir Pasien</h6></legend>
-                            <input type="date" class="form-control item" name="ttl" id="birth-date" placeholder="Birth Date" required>
+                            <input type="date" class="form-control item" name="ttl" id="birth-date" placeholder="Birth Date" >
                         </div>
                         <div class="form-group">
                             <select class="form-control-item form-select gender" name="gd" id="golongan_darah">
@@ -109,13 +110,13 @@
                         <fieldset>
                         <legend>Data Penangungjawab Keluarga Pasien</legend>
                              <div class="form-group">
-                            <input type="text" class="form-control item" name="nama_penangung" id="name_penanggung" placeholder="Nama Lengkap" max="18" required>
+                            <input type="text" class="form-control item" name="nama_penangung" id="name_penanggung" placeholder="Nama Lengkap" max="18" >
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="alamat_penangung" id="alamat_penangung" placeholder="Alamat Lengkap" max="18" required>
+                            <input type="text" class="form-control item" name="alamat_penangung" id="alamat_penangung" placeholder="Alamat Lengkap" max="18" >
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="tlp_penangung" id="tlp_penangung" placeholder="No Telepon /Handphone (aktif)" required>
+                            <input type="text" class="form-control item" name="tlp_penangung" id="tlp_penangung" placeholder="No Telepon /Handphone (aktif)" >
                         </div>
                         </fieldset>
                         <div class="form-group">
