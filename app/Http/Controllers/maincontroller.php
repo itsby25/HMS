@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Users;
+use App\Models\Pasien;
 
 use Illuminate\Http\Request;
 
@@ -31,7 +33,8 @@ class maincontroller extends Controller
      }
 
     public function dashboard() {
-        return view('dashboard');
+        $total=Pasien::all()->count();
+        return view('dashboard',compact('total'));
     } 
 
     public function user_new() {
