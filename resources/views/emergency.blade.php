@@ -591,8 +591,9 @@
               <div class="col-lg-12 stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Data Pasien IGD Hari Ini</h4>                                
-                    <table class="table table-bordered">
+                    <h4 class="card-title">Data Pasien IGD Hari Ini</h4>  
+                    <div class="table-responsive">                              
+                    <table class="table">
                       <thead>
                         <tr>
                           <th> #No.RM</th>
@@ -658,6 +659,7 @@
                         </tr>
                       </tbody>
                     </table>
+                    </div>
                   </div>
                 </div>
               </div>

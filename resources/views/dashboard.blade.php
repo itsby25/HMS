@@ -229,7 +229,7 @@
                 <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">REGISTRATION <br><i class="mdi mdi-account-supervisor-circle-outline mdi-48px float-start"></i>
-                    </h4>  {{$total}} || terdaftar                
+                    </h4>  {{$total}} <sup>terdaftar</sup>                
                   </div>
                 </a> 
                 </div>
