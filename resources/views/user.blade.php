@@ -42,6 +42,9 @@
                             <input type="text" id="name" class="form-control item" name="nama" placeholder="Nama Lengkap" max="18" required>
                         </div>
                         <div class="form-group">
+                            <input type="text" class="form-control item" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
                         <select class="form-control-item form-select gender" name="unit" required>
                             <option selected>Unit Kerja</option>
                             <option value="1">MANAGEMENT</option>
