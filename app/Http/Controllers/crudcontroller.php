@@ -14,6 +14,11 @@ class crudcontroller extends Controller
         $simpan->username = $request->nama;
         $simpan->realname = $request->nama." ".$request->title;
         $simpan->email = $request->email;
+        $simpan->kd_unit = $request->unit;
+        $simpan->level = $request->level;
+        $simpan->kd_fungsi = $request->fungsi;
+        $simpan->kd_jabatan = $request->jabatan;
+        $simpan->aktif = 1;
         $simpan->password = md5($request->paswd);
         $simpan->save();
         echo("tersimpan");

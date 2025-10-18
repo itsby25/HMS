@@ -48,29 +48,33 @@
                         <select class="form-control-item form-select gender" name="unit" required>
                             <option selected>Unit Kerja</option>
                             <option value="1">MANAGEMENT</option>
-                            <option value="3">IGD</option>
-                            <option value="2">SDM</option>
-                            <option value="3">FINANCE</option>
-                            <option value="3">CASEMIX</option>
-                            <option value="3">RAWAT INAP</option>
-                            <option value="3">RAWAT JALAN</option>
-                            <option value="3">SIMRS</option>
-
+                            <option value="2">IGD</option>
+                            <option value="3">SDM</option>
+                            <option value="4">FINANCE</option>
+                            <option value="5">CASEMIX</option>
+                            <option value="6">RAWAT INAP</option>
+                            <option value="7">RAWAT JALAN</option>
+                            <option value="8">SIMRS</option>
+                            <option value="9">UPS</option>
+                            <option value="10">LABORAT</option>
+                            <option value="11">RADIOLOGI</option>
+                            <option value="12">MARKETING</option>
+                            <option value="13">FARMASI</option>
                         </select>
                         </div>
                         <div class="form-group">
                         <select class="form-control-item form-select gender" name="fungsi" required>
                             <option selected>Fungsi Kerja</option>
-                            <option value="1">MANAGER</option>
-                            <option value="2">DOKTER</option>
-                            <option value="2">PERAWAT</option>
-                            <option value="2">BIDAN</option>
-                            <option value="2">TENAGA AHLI</option>
-                            <option value="2">SUPERVISOR</option>
-                            <option value="2">STAFF</option>
-                            <option value="3">SUPIR</option>
-                            <option value="3">OB</option>
-                            <option value="3">TUKANG</option>
+                            <option value="MGR">MANAGER</option>
+                            <option value="DKT">DOKTER</option>
+                            <option value="PRW">PERAWAT</option>
+                            <option value="BDN">BIDAN</option>
+                            <option value="TA">TENAGA AHLI</option>
+                            <option value="SPV">SUPERVISOR</option>
+                            <option value="STF">STAFF</option>
+                            <option value="SPR">SUPIR</option>
+                            <option value="OB">OB</option>
+                            <option value="TKN">TUKANG</option>
                         </select>
                         </div>
                         <div class="form-group">
@@ -87,8 +91,8 @@
                             <option value="1">SuperAdministrator</option>
                             <option value="2">Administrator</option>
                             <option value="3">Admin</option>
-                            <option value="3">User</option>
-                            <option value="3">End User</option>
+                            <option value="4">User</option>
+                            <option value="5">End User</option>
                         </select>
                         </div>
                         <div class="form-group">
