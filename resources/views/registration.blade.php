@@ -64,7 +64,7 @@
                         </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="no_polis_asuransi" id="no_polis" placeholder="No Polis Asuransi" >
+                            <input type="text" class="form-control item" name="no_polis" id="no_polis" placeholder="No Polis Asuransi" >
                         </div>
                         <div class="form-group">
                         <select class="form-control-item form-select gender" name="institusi" id="institusi">
@@ -75,7 +75,7 @@
                         </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control item" name="no_pegawai" id="nip" placeholder="No Induk Karyawan" >
+                            <input type="text" class="form-control item" name="nip" id="nip" placeholder="No Induk Karyawan" >
                         </div>
                         <div class="form-group">
                         <select class="form-control-item form-select gender" name="kd_jk" id="kode_jenis_kelamin">
@@ -99,12 +99,12 @@
                             <option selected>Golongan Darah</option>
                             <option value="1">A+</option>
                             <option value="2">A-</option>
-                            <option value="1">B+</option>
-                            <option value="2">B-</option>
-                            <option value="1">AB+</option>
-                            <option value="2">AB-</option>
-                            <option value="1">O+</option>
-                            <option value="2">O-</option>
+                            <option value="3">B+</option>
+                            <option value="4">B-</option>
+                            <option value="5">AB+</option>
+                            <option value="6">AB-</option>
+                            <option value="7">O+</option>
+                            <option value="8">O-</option>
                         </select>
                         </div>
                         <fieldset>

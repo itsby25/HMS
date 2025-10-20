@@ -42,9 +42,37 @@ class crudcontroller extends Controller
         }
         
 
-        echo $norm;
+        //echo $norm;
         $simpan= new Pasien();
-        $simpan->norm = $norm;     
+        $simpan->norm = $norm;
+        $simpan->nama = $request->nama; 
+        $simpan->no_id = $request->ktp;
+        $simpan->kd_id =$request->kd_id;
+        $simpan->marga=$request->marga;
+        $simpan->kd_sex=$request->kd_sex;
+        $simpan->tempat_lahir=$request->tempat_lahir;
+        $simpan->tgl_lahir=$request->ttl;
+        $simpan->alamat_asal=$request->alamat_asal;
+        $simpan->alamat_domisili=$request->alamat_domisili;
+        $simpan->kd_gol_darah=$request->gd;
+        $simpan->alergi=$request->alergi;
+        $simpan->kd_pekerjaan=$request->kd_pekerjaan;
+        $simpan->kd_sts_kawin=$request->kd_jk;
+        $simpan->kd_pendidikan=$request->kd_pendidikan;
+        $simpan->kd_agama=$request->kd_agama;
+        $simpan->kd_warga_negara=$request->kd_warga_negara;
+        $simpan->no_passport=$request->no_passport;
+        $simpan->email=$request->email;
+        $simpan->aktif=$request->aktif;
+        $simpan->kd_blokir=$request->kd_blokir;
+        $simpan->kd_keluarga=$request->kd_keluarga;
+        $simpan->noka_BPJS=$request->noka;
+        $simpan->noPolis_Asuransi=$request->no_polis;
+        $simpan->no_induk_pegawai=$request->nip;
+        $simpan->kd_instansi=$request->kd_instansi;
+        $simpan->t_badan=$request->tbdn;
+        $simpan->b_badan=$request->bbdn;
+        $simpan->kd_diagnosa_awal=$request->kd_diagnosa;     
         $simpan->save();
         echo("tersimpan");
         //return json_encode($data);
