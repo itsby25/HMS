@@ -47,13 +47,13 @@ class crudcontroller extends Controller
         $simpan->norm = $norm;
         $simpan->nama = $request->nama; 
         $simpan->no_id = $request->ktp;
-        $simpan->kd_id =$request->kd_id;
+        $simpan->kd_id =1;
         $simpan->marga=$request->marga;
         $simpan->kd_sex=$request->kd_sex;
         $simpan->tempat_lahir=$request->tempat_lahir;
         $simpan->tgl_lahir=$request->ttl;
-        $simpan->alamat_asal=$request->alamat_asal;
-        $simpan->alamat_domisili=$request->alamat_domisili;
+        $simpan->alamat_asal=$request->alamat;
+        $simpan->alamat_domisili=$request->alamat;
         $simpan->kd_gol_darah=$request->gd;
         $simpan->alergi=$request->alergi;
         $simpan->kd_pekerjaan=$request->kd_pekerjaan;
@@ -63,8 +63,8 @@ class crudcontroller extends Controller
         $simpan->kd_warga_negara=$request->kd_warga_negara;
         $simpan->no_passport=$request->no_passport;
         $simpan->email=$request->email;
-        $simpan->aktif=$request->aktif;
-        $simpan->kd_blokir=$request->kd_blokir;
+        $simpan->aktif=1;
+        $simpan->kd_blokir=0;
         $simpan->kd_keluarga=$request->kd_keluarga;
         $simpan->noka_BPJS=$request->noka;
         $simpan->noPolis_Asuransi=$request->no_polis;
