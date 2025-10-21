@@ -127,5 +127,61 @@
                     </form>
                 </div>            
             </main>
+
+            <script>
+
+                
+                $(document).ready(function() {
+                    $(".js-example-basic-single").select2();
+                    $(".js-example-basic-single-1").select2();
+                    view();
+                });
+
+                function view()
+                    {
+                        var from = document.getElementById("dari").value;
+                        var to = document.getElementById("sampai").value;
+
+                        $.ajax({
+                            type:"GET",
+                            url:"",
+                            dataType:"JSON",
+                            success:function(result){
+                            console.log(result.all);
+                            
+                            let text="";
+                            
+
+                            for(let i=0;i<result.all.length;i++)
+                            {
+                                text+=
+                                "<tr><td>"+result.all[i].NamaUnit+"</td><td>"+result.all[i].tgl+"</td><td>"+result.all[i].jam+"</td><td>"+result.all[i].nama_profesi+"</td><td></td><td>"+result.all[i].prosedur+"</td><td>"+result.all[i].petugas+"</td><td><button class='btn btn-warning' onclick='modif("+result.all[i].no+")'>Edit</button><button class='btn btn-danger' onclick='hapus("+result.all[i].no+")'>Hapus</button></td></tr>";
+                            }
+                            document.getElementById("mytable").innerHTML=text;
+                            
+                            }
+                            
+                        })
+                    }
+
+                    function hapus(a)
+                    {
+                       
+                        var from = document.getElementById("dari").value;
+                        var to = document.getElementById("sampai").value;
+
+                        $.ajax({
+                            type:"GET",
+                            url:"",
+                            dataType:"JSON",
+                            success:function(result){
+                            console.log(result.all);	
+                            }		
+                        })
+                        view();
+                        
+                    }
+
+            </script>    
 </body>
 </html>
