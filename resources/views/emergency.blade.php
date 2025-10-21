@@ -99,7 +99,7 @@
                 <i class="mdi mdi-home menu-icon"></i>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <a class="nav-link" data-bs-toggle="collapse" href="/tindakan_igd" aria-expanded="false" aria-controls="tables">
                 <span class="menu-title">Form Tindakan IGD</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>

@@ -39,5 +39,9 @@ class maincontroller extends Controller
 
     public function user_new() {
         return view('user');
-    } 
+    }
+    
+    public function in_igd() {
+        return view('input_emergency');
+    }
 }

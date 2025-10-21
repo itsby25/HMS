@@ -16,6 +16,7 @@ Route::get('ranap',[maincontroller::class,'ranap']);
 Route::get('login',[maincontroller::class,'login']);
 Route::get('dashboard',[maincontroller::class,'dashboard']);
 Route::get('user',[maincontroller::class,'user_new']);
+Route::get('tindakan_igd',[maincontroller::class,'in_igd']);
 
 
 Route::post('user_new',[crudcontroller::class,'user_add']);
