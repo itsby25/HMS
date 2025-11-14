@@ -10,7 +10,7 @@ class maincontroller extends Controller
 {
     public function register() {
 
-        return view('registration');
+        return view('dashboard_registration');
     }
 
     public function igd() {
@@ -33,10 +33,11 @@ class maincontroller extends Controller
      }
 
     public function dashboard() {
-        $total=Pasien::all()->count();
-        return view('dashboard',compact('total'));
-    } 
-
+      //  $total=Pasien::all()->count();
+      //  return view('dashboard',compact('total'));
+      return view('dashboard');  
+    }
+     
     public function user_new() {
         return view('user');
     }

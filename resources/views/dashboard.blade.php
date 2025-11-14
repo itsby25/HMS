@@ -225,11 +225,11 @@
           <div class="row">
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-danger card-img-holder text-white">
-                <a href="main" class="text-white nav-link">  
+                <a href="main" class="text-white nav-link" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">  
                 <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">REGISTRATION <br><i class="mdi mdi-account-supervisor-circle-outline mdi-48px float-start"></i>
-                    </h4>  {{$total}} <sup>terdaftar</sup>                
+                    </h4> <sup>terdaftar</sup>                
                   </div>
                 </a> 
                 </div>
@@ -358,9 +358,29 @@
                 </div>
               </div>
             </div>
-
-
 </div>
+
+<!--Modal-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrasi Popup</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-footer">
+        <a href="main"><button type="button" class="btn btn-info" data-bs-dismiss="modal">New</button></a>
+        <button type="button" class="btn btn-success">IGD</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">RAWAT JALAN</button>
+        <button type="button" class="btn btn-primary">RAWAT INAP</button>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!--END modal-->
           <!-- End Of Content-->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">

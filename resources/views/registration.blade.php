@@ -38,9 +38,9 @@
                         <div class="form-group">
                         <select class="form-control-item form-select gender" name="title" required>
                             <option selected>Title</option>
-                            <option value="1">Tn.</option>
-                            <option value="2">Ny.</option>
-                            <option value="3">Nn.</option>
+                            <option value=".Tn">Tn.</option>
+                            <option value=".Ny">Ny.</option>
+                            <option value=".Nn">Nn.</option>
                         </select>
                         </div>
                         <div class="form-group">
