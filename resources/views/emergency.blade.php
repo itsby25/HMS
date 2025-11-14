@@ -210,157 +210,44 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Form IGD </h3>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Form elements</li>
-                </ol>
-              </nav>
+              <h3 class="page-title"> Instalasi Gawat Darurat </h3>
             </div>
             <div class="row">
               
               <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Emergency Detail</h4>
                     <form class="form-sample">
-                      <p class="card-description"> Pasien info </p>
+                      <p class="card-description"> DATA Pasien </p>
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                           <div class="form-group">
                           <div class="form-group row">
                             <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <input type="text" class="form-control" placeholder="Cari No RM Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
                               <div class="input-group-append">
                                 <button class="btn btn-sm btn-gradient-primary py-3" type="button">Search</button>
                               </div>
                             </div>
-                    </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Last Name</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
+
+                        <div class="col-md-8">
+                          <div class="form-group">
                           <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Gender</label>
-                            <div class="col-sm-9">
-                              <select class="form-select">
-                                <option>Male</option>
-                                <option>Female</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Date of Birth</label>
-                            <div class="col-sm-9">
-                              <input class="form-control" placeholder="dd/mm/yyyy" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Category</label>
-                            <div class="col-sm-9">
-                              <select class="form-select">
-                                <option>Category1</option>
-                                <option>Category2</option>
-                                <option>Category3</option>
-                                <option>Category4</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Membership</label>
-                            <div class="col-sm-4">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked> Free </label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Cari Nama Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                <button class="btn btn-sm btn-gradient-primary py-3" type="button">Search</button>
                               </div>
                             </div>
-                            <div class="col-sm-5">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2"> Professional </label>
-                              </div>
                             </div>
                           </div>
                         </div>
+                        
                       </div>
-                      <p class="card-description"> Address </p>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Address 1</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">State</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Address 2</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Postcode</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">City</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Country</label>
-                            <div class="col-sm-9">
-                              <select class="form-select">
-                                <option>America</option>
-                                <option>Italy</option>
-                                <option>Russia</option>
-                                <option>Britain</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </form>
                   </div>
                 </div>
