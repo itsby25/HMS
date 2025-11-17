@@ -315,19 +315,19 @@
                             <div class="col-sm-3">
                               <div class="form-check">
                                 <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="membershipRadios1" value="Umum" checked> Pribadi </label>
+                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="penjaminRadios1" value="Umum" checked> Pribadi </label>
                               </div>
                             </div>
                             <div class="col-sm-3">
                               <div class="form-check">
                                 <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="membershipRadios2" value="BPJS"> BPJS </label>
+                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="penjaminRadios2" value="BPJS"> BPJS </label>
                               </div>
                             </div>
                             <div class="col-sm-3">
                               <div class="form-check">
                                 <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="membershipRadios3" value="Asuransi"> Asuransi </label>
+                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="penjaminRadios3" value="Asuransi"> Asuransi </label>
                               </div>
                             </div>
                           </div>
@@ -420,7 +420,7 @@
                         <div class="col-md-6">
                           <div class="form-group row">
                             <div class="card-body">
-                             <button type="submit" class="btn btn-gradient-primary me-2"  onclick="message()">Simpan</button>
+                             <button type="submit" class="btn btn-gradient-primary me-2"  onclick="simpan()">Simpan</button>
                               <button type="submit" class="btn btn-gradient-success me-2"  onclick="message()">Batal</button>
                             </div> 
                           </div>
@@ -472,63 +472,35 @@
     <!-- plugins:js -->
 
   <script>       
-                $(document).ready(function() {
-                    $(".js-example-basic-single").select2();
-                    $(".js-example-basic-single-1").select2();
-                    view();
-                });
-                
-                function message()
-                {
-                  alert("Your message here");
-                }
+              
+   function simpan()
+        {
+     
+           var myData ={
+            title : document.getElementById("title").value,
+            nama : document.getElementById("nama").value,
+            email : document.getElementById("email").value,
+            notelp : document.getElementById("notelp").value,
+            nip : document.getElementById("nik").value,
+            noka_bpjs : document.getElementById("noka_bpjs").value,
+            kelamin : document.getElementById("kelamin").value,
+            ttl : document.getElementById("ttl").value,
+            penjamin : penjamin,
+            }
+        
+           var Jdata =  JSON.stringify(myData);  
+           
+           
 
-                function view()
-                    {
-                        var from = document.getElementById("dari").value;
-                        var to = document.getElementById("sampai").value;
+          alert("simpan"+Jdata);
+        }
 
-                        $.ajax({
-                            type:"GET",
-                            url:"",
-                            dataType:"JSON",
-                            success:function(result){
-                            console.log(result.all);
-                            
-                            let text="";
-                            
-
-                            for(let i=0;i<result.all.length;i++)
-                            {
-                                text+=
-                                "<tr><td>"+result.all[i].NamaUnit+"</td><td>"+result.all[i].tgl+"</td><td>"+result.all[i].jam+"</td><td>"+result.all[i].nama_profesi+"</td><td></td><td>"+result.all[i].prosedur+"</td><td>"+result.all[i].petugas+"</td><td><button class='btn btn-warning' onclick='modif("+result.all[i].no+")'>Edit</button><button class='btn btn-danger' onclick='hapus("+result.all[i].no+")'>Hapus</button></td></tr>";
-                            }
-                            document.getElementById("mytable").innerHTML=text;
-                            
-                            }
-                            
-                        })
-                    }
-
-                    function hapus(a)
-                    {
-                       
-                        var from = document.getElementById("dari").value;
-                        var to = document.getElementById("sampai").value;
-
-                        $.ajax({
-                            type:"GET",
-                            url:"",
-                            dataType:"JSON",
-                            success:function(result){
-                            console.log(result.all);	
-                            }		
-                        })
-                        view();
-                        
-                    }
-
-            </script>    
+   function message()
+        {
+          alert("message");
+        }
+     
+  </script>    
 
 
 
