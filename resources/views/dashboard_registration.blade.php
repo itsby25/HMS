@@ -315,7 +315,7 @@
                             <div class="col-sm-3">
                               <div class="form-check">
                                 <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="penjaminRadios1" value="Umum" checked> Pribadi </label>
+                                  <input type="radio" class="form-check-input" name="penjaminRadios" id="penjaminRadios1" value="Umum"> Pribadi </label>
                               </div>
                             </div>
                             <div class="col-sm-3">
@@ -475,7 +475,35 @@
               
    function simpan()
         {
-     
+          
+          switch(document.getElementById("penjaminRadios1").checked)
+          {
+          case true:
+            var penjamin = document.getElementById("penjaminRadios1").value;
+            break;
+           case false:
+           break;
+          }	
+
+           switch(document.getElementById("penjaminRadios2").checked)
+          {
+          case true:
+            var penjamin = document.getElementById("penjaminRadios2").value;
+            break;
+           case false:
+            break;  
+          }	
+
+           switch(document.getElementById("penjaminRadios3").checked)
+          {
+          case true:
+            var penjamin = document.getElementById("penjaminRadios3").value;
+            break;
+           case false:
+            break;  
+          }	
+
+
            var myData ={
             title : document.getElementById("title").value,
             nama : document.getElementById("nama").value,
@@ -485,7 +513,7 @@
             noka_bpjs : document.getElementById("noka_bpjs").value,
             kelamin : document.getElementById("kelamin").value,
             ttl : document.getElementById("ttl").value,
-            penjamin : penjamin,
+            jamin : penjamin,
             }
         
            var Jdata =  JSON.stringify(myData);  
