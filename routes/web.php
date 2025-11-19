@@ -20,4 +20,6 @@ Route::get('tindakan_igd',[maincontroller::class,'in_igd']);
 
 
 Route::post('user_new',[crudcontroller::class,'user_add']);
+Route::get('user_get',[crudcontroller::class,'user_get_data']);
 Route::post('pasien_new',[crudcontroller::class,'patient_add']);
+Route::get('pasien_get',[crudcontroller::class,'get_data_pasien']);

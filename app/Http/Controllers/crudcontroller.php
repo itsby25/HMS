@@ -27,6 +27,11 @@ class crudcontroller extends Controller
         
     }
 
+    public function user_get_data(Request $request) {
+        $data_user=Users::Where('username',$request->nama)->orWhere('email',$request->email)->get();
+        return ($data_user);
+    }
+
     public function patient_add(Request $request) {
 
         //$data=$request->all();
@@ -52,12 +57,12 @@ class crudcontroller extends Controller
         $simpan->kd_sex=$request->kd_sex;
         $simpan->tempat_lahir=$request->tempat_lahir;
         $simpan->tgl_lahir=$request->ttl;
-        $simpan->alamat_asal=$request->alamat;
-        $simpan->alamat_domisili=$request->alamat;
+        $simpan->alamat_asal=$request->alamat_asal;
+        $simpan->alamat_domisili=$request->alamat_domisili;
         $simpan->kd_gol_darah=$request->gd;
         $simpan->alergi=$request->alergi;
         $simpan->kd_pekerjaan=$request->kd_pekerjaan;
-        $simpan->kd_sts_kawin=$request->kd_jk;
+        $simpan->kd_sts_kawin=$request->kd_sts_kawin;
         $simpan->kd_pendidikan=$request->kd_pendidikan;
         $simpan->kd_agama=$request->kd_agama;
         $simpan->kd_warga_negara=$request->kd_warga_negara;
@@ -77,5 +82,11 @@ class crudcontroller extends Controller
         echo("tersimpan");
         //return json_encode($data);
         
+    }
+
+    public function get_data_pasien(Request $request)
+    {
+        $data_pasien= Pasien::Where('norm',$request->norm)->orWhere('nama',$request->nama)->get();
+        return ($data_pasien);
     }
 }

@@ -301,6 +301,29 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Status</label>
+                            <div class="col-sm-9">
+                              <select id="stat_nikah" class="form-select">
+                                <option value="BK">Belum Kawin</option>
+                                <option value="K">Kawin</option>
+                                <option value="D">DUDA</option>
+                                <option value="J">JANDA</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Tempat</label>
+                            <div class="col-sm-9">
+                               <input type="text" id="t_lahir" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Tgl Lahir</label>
                             <div class="col-sm-9">
                               <input type="date" id="ttl" class="form-control" placeholder="MM/DD/YYYY" />
@@ -509,17 +532,18 @@
             nama : document.getElementById("nama").value,
             email : document.getElementById("email").value,
             notelp : document.getElementById("notelp").value,
-            nip : document.getElementById("nik").value,
-            noka_bpjs : document.getElementById("noka_bpjs").value,
-            kelamin : document.getElementById("kelamin").value,
+            ktp : document.getElementById("nik").value,
+            noka : document.getElementById("noka_bpjs").value,
+            kd_sex : document.getElementById("kelamin").value,
             ttl : document.getElementById("ttl").value,
-            jamin : penjamin,
-            alm1: document.getElementById("alamat_1").value,
-            alm2: document.getElementById("alamat_2").value,
+            alamat_asal: document.getElementById("alamat_1").value,
+            alamat_domisili: document.getElementById("alamat_2").value,
             propinsi: document.getElementById("propinsi").value,
             kdpos: document.getElementById("kdpos").value,
             kota: document.getElementById("kota").value,
             negara: document.getElementById("negara").value,
+            kd_sts_kawin: document.getElementById("stat_nikah").value,
+            tempat_lahir: document.getElementById("t_lahir").value
             }
         
            var Jdata =  JSON.stringify(myData);  
