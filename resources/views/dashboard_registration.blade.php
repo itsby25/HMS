@@ -256,7 +256,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Email</label>
                             <div class="col-sm-9">
-                              <input type="text" id="email" class="form-control" />
+                              <input type="email" id="email" class="form-control" />
                             </div>
                           </div>
                         </div>
@@ -264,7 +264,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">No.Telp</label>
                             <div class="col-sm-9">
-                              <input type="text" id="notelp" class="form-control" />
+                              <input type="number" id="notelp" class="form-control" />
                             </div>
                           </div>
                         </div>
@@ -274,7 +274,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Nik.KTP</label>
                             <div class="col-sm-9">
-                              <input type="text" id="nik" class="form-control" />
+                              <input type="number" id="nik" class="form-control" />
                             </div>
                           </div>
                         </div>
@@ -282,7 +282,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">No.BPJS</label>
                             <div class="col-sm-9">
-                              <input type="text" id="noka_bpjs" class="form-control" />
+                              <input type="number" id="noka_bpjs" class="form-control" />
                             </div>
                           </div>
                         </div>
@@ -357,7 +357,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Alamat 2</label>
                             <div class="col-sm-9">
-                              <input type="text" id="Alamat_2" class="form-control" />
+                              <input type="text" id="alamat_2" class="form-control" />
                             </div>
                           </div>
                         </div>
@@ -514,13 +514,29 @@
             kelamin : document.getElementById("kelamin").value,
             ttl : document.getElementById("ttl").value,
             jamin : penjamin,
+            alm1: document.getElementById("alamat_1").value,
+            alm2: document.getElementById("alamat_2").value,
+            propinsi: document.getElementById("propinsi").value,
+            kdpos: document.getElementById("kdpos").value,
+            kota: document.getElementById("kota").value,
+            negara: document.getElementById("negara").value,
             }
         
            var Jdata =  JSON.stringify(myData);  
            
-           
+           $.ajax({
+              type: "POST",
+              url: "http://127.0.0.1:8000/pasien_new",
+              data: Jdata,
+              contentType: "application/json; charset=utf-8",
+              dataType: "json",
+              success: function(result)
+              {
+                alert("simpan"+Jdata);
+              }
+          });
 
-          alert("simpan"+Jdata);
+         
         }
 
    function message()
