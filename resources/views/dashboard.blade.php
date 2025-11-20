@@ -371,8 +371,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-footer">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Cari Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                <button class="btn btn-sm btn-gradient-primary py-3" type="button">Cari | Search</button>
+                              </div>
+        </div>
         <a href="main"><button type="button" class="btn btn-info" data-bs-dismiss="modal">New</button></a>
-        <button type="button" class="btn btn-success">IGD</button>
+        <a href="igd"><button type="button" class="btn btn-success">IGD</button></a>
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">RAWAT JALAN</button>
         <button type="button" class="btn btn-primary">RAWAT INAP</button>
       </div> 

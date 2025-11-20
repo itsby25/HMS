@@ -467,7 +467,7 @@
       </div>
       <div class="modal-footer">
         <a href="main"><button type="button" class="btn btn-info" data-bs-dismiss="modal">New</button></a>
-        <button type="button" class="btn btn-success">IGD</button>
+        <a href="igd"><button type="button" class="btn btn-success" data-bs-dismiss="modal">IGD</button></a>
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">RAWAT JALAN</button>
         <button type="button" class="btn btn-primary">RAWAT INAP</button>
       </div> 
