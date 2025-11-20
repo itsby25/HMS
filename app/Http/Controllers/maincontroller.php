@@ -32,10 +32,28 @@ class maincontroller extends Controller
         return view('login');
      }
 
-    public function dashboard() {
-      //  $total=Pasien::all()->count();
-      //  return view('dashboard',compact('total'));
-      return view('dashboard');  
+    public function dashboard(Request $request) {
+
+      $uname=$request->username;
+      $passwd=$request->passwd;
+
+
+      $get_user=Users::Where('username',$uname)->Where('password',md5($passwd))->count();
+      $request->session()->put('username',$uname);
+      
+      switch ($get_user) {
+        case 0:
+            return view('login');
+            break;
+        
+        default:       
+            $user= $request->session()->get('username');
+            $profile=Users::Where('username',$user);
+            $total_pasien=Pasien::All()->count();
+            return view('dashboard',compact('user','profile','total_pasien'));
+            break;
+      }
+     
     }
      
     public function user_new() {

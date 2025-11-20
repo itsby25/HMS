@@ -45,14 +45,14 @@
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="nav-profile-img">
-                  <span class="availability-status online"></span>
-                </div>
+                @session('username'){{ $value }}@endsession
               </a>
               <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
                 <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-account-circle-outline me-2 text-primary"></i> Profile </a>
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
               </div>
@@ -229,7 +229,7 @@
                 <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">REGISTRATION <br><i class="mdi mdi-account-supervisor-circle-outline mdi-48px float-start"></i>
-                    </h4> <sup>terdaftar</sup>                
+                    </h4>{{$total_pasien}} <sup>terdaftar</sup>                
                   </div>
                 </a> 
                 </div>

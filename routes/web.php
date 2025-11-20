@@ -14,7 +14,7 @@ Route::get('igd',[maincontroller::class,'igd']);
 Route::get('rawin',[maincontroller::class,'rawin']);
 Route::get('ranap',[maincontroller::class,'ranap']);
 Route::get('login',[maincontroller::class,'login']);
-Route::get('dashboard',[maincontroller::class,'dashboard']);
+Route::post('dashboard',[maincontroller::class,'dashboard']);
 Route::get('user',[maincontroller::class,'user_new']);
 Route::get('tindakan_igd',[maincontroller::class,'in_igd']);
 
