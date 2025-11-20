@@ -51,9 +51,9 @@
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#profileModal">
                   <i class="mdi mdi-account-circle-outline me-2 text-primary"></i> Profile </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="login">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
               </div>
             </li>
@@ -362,7 +362,7 @@
 
 <!--Modal-->
 
-<!-- Modal -->
+<!-- Modal registrasi-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -381,6 +381,42 @@
         <a href="igd"><button type="button" class="btn btn-success">IGD</button></a>
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">RAWAT JALAN</button>
         <button type="button" class="btn btn-primary">RAWAT INAP</button>
+      </div> 
+    </div>
+  </div>
+</div>
+<!--Modal Profile-->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Profile User</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-footer">
+        <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Profile</h4>
+                    <form class="form-inline">
+                      <label class="sr-only" for="inlineFormInputName2">Name</label>
+                      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+                      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                      </div>
+                      <div class="form-check mx-sm-2">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" checked> Remember me </label>
+                      </div>
+                      <button type="submit" class="btn btn-gradient-primary mb-2">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
       </div> 
     </div>
   </div>
