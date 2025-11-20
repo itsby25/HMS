@@ -63,12 +63,7 @@
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="nav-profile-img">
-                  <span class="availability-status online"></span>
-                </div>
-                <div class="nav-profile-text">
-            
-                </div>
+                 @session('username'){{ $value }}@endsession
               </a>
               <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item" href="#">
