@@ -2,8 +2,8 @@
 Hospital Management System
 adalah sistem informasi management rumah sakit.
 1. LOGIN
-
-2. DASHBOARD
+   <img src='https://github.com/itsby25/HMS/Login.png'>
+3. DASHBOARD
 
 <h3>spesifikasi<h3>
 <ul>
