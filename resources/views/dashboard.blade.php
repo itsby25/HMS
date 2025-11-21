@@ -390,30 +390,66 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Profile User</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">User Info</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-footer">
         <div class="col-12 grid-margin stretch-card">
                 <div class="card">
-                  <div class="card-body">
+                   <div class="card-body">
+                    <h4 class="card-title">Photo Profile</h4>
+                    <img data-src="holder.js/200x200" class="rounded float-left" alt="200x200" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19aa5c0bd9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A10pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19aa5c0bd9d%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2274.421875%22%20y%3D%22104.5%22%3E200x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 200px;">
+                    <hr>
                     <h4 class="card-title">Profile</h4>
-                    <form class="form-inline">
-                      <label class="sr-only" for="inlineFormInputName2">Name</label>
-                      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-                      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-                      <div class="input-group mb-2 mr-sm-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">@</div>
+                    
+                      <p class="card-description"> User info </p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">User Name</label>  
+                          </div>
                         </div>
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Real Name</label> 
+                          </div>
+                        </div>
                       </div>
-                      <div class="form-check mx-sm-2">
-                        <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" checked> Remember me </label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Unit</label>                            
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Akses Level</label>
+                          </div>
+                        </div>
                       </div>
-                      <button type="submit" class="btn btn-gradient-primary mb-2">Submit</button>
-                    </form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Status</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Start At</label>
+                          </div>
+                        </div>
+                      </div>    
+                      
+                      
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <button  class="col-sm-4 btn btn-success">Update</button>
+                            <button class="col-sm-4 btn btn-danger">Upload Photo</button>
+                            <button class="col-sm-4 btn btn-primary">HRM</button>
+                          </div>
+                        </div>
+                      </div>   
                   </div>
                 </div>
               </div>
