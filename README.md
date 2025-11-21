@@ -5,6 +5,8 @@ adalah sistem informasi management rumah sakit.
    <img src="https://github.com/itsby25/HMS/blob/main/Login.png">
 2. DASHBOARD
    <img src="https://github.com/itsby25/HMS/blob/main/Dashboard.png">
+3. NEW REGISTRATION
+    <img src="https://github.com/itsby25/HMS/blob/main/registrasi.png">   
 3. NEW PASIEN.
    <img src="https://github.com/itsby25/HMS/blob/main/Pasien_new.png">
 
