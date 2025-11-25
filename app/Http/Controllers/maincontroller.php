@@ -32,6 +32,18 @@ class maincontroller extends Controller
         return view('login');
      }
 
+    public function laborat(){
+        return view('lims');
+    } 
+
+    public function farmasi(){
+		return view ('pharmacy');	
+	}
+	
+	public function radiologi(){
+		return view ('rim');	
+	}
+    
     public function dashboard(Request $request) {
 
       $uname=$request->username;

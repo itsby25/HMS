@@ -15,6 +15,11 @@ Route::get('tindakan_igd',[maincontroller::class,'in_igd']);
 Route::get('igd',[maincontroller::class,'igd']);
 Route::get('rawin',[maincontroller::class,'rawin']);
 Route::get('rajal',[maincontroller::class,'rajal']);
+Route::get('lims',[maincontroller::class,'laborat']);
+Route::get('pharmacy',[maincontroller::class,'farmasi']);
+Route::get('ris',[maincontroller::class,'radiologi']);
+Route::get('rajal',[maincontroller::class,'rajal']);
+
 #Frondend
 Route::get('login',[maincontroller::class,'login']);
 Route::post('dashboard',[maincontroller::class,'dashboard']);

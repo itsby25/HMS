@@ -275,32 +275,35 @@
                 <div class="row">
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-danger card-img-holder text-white">
-                  <div class="card-body">
+                <a href="lims" class="text-white nav-link">    
+                <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">LABORAT | LIMS <i class="mdi mdi-microscope mdi-48px float-start"></i>
-                    </h4>
-                                     
+                    </h4>                      
                   </div>
+                </a> 
                 </div>
               </div>
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-info card-img-holder text-white">
-                  <div class="card-body">
+                <a href="pharmacy" class="text-white nav-link">    
+                <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">PHARMACY<i class="mdi mdi-pill mdi-48px float-start"></i>
-                    </h4>
-                    
+                    </h4>        
                   </div>
+                </a>
                 </div>
               </div>
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-success card-img-holder text-white">
-                  <div class="card-body">
+                <a href="ris" class="text-white nav-link">    
+                <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">RADIOLOGY | RIS <i class="mdi mdi-radioactive mdi-48px float-start"></i>
                     </h4>
-                    
                   </div>
+                </a>
                 </div>
               </div>
 
@@ -354,7 +357,7 @@
                 <div class="card bg-gradient-secondary card-img-holder text-white">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                    <h4 class="font-weight-normal mb-3">MCU <i class="mdi mdi-stethoscope mdi-48px float-start"></i>
+                    <h4 class="font-weight-normal mb-3">BANK DARAH <i class="mdi mdi-stethoscope mdi-48px float-start"></i>
                     </h4>
                    
                   </div>
