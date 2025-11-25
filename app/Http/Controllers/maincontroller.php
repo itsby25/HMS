@@ -23,7 +23,7 @@ class maincontroller extends Controller
         return view('inpatient');
     }
 
-    public function ranap() {
+    public function rajal() {
 
         return view('outpatient');
     }

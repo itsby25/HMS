@@ -12,7 +12,7 @@ Route::get('/', function () {
 Route::get('main',[maincontroller::class,'register']);
 Route::get('igd',[maincontroller::class,'igd']);
 Route::get('rawin',[maincontroller::class,'rawin']);
-Route::get('ranap',[maincontroller::class,'ranap']);
+Route::get('rajal',[maincontroller::class,'rajal']);
 Route::get('login',[maincontroller::class,'login']);
 Route::post('dashboard',[maincontroller::class,'dashboard']);
 Route::get('user',[maincontroller::class,'user_new']);
