@@ -9,16 +9,19 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Route::get('main',[maincontroller::class,'register']);
+#sub_service
+Route::get('tindakan_igd',[maincontroller::class,'in_igd']);
+#services
 Route::get('igd',[maincontroller::class,'igd']);
 Route::get('rawin',[maincontroller::class,'rawin']);
 Route::get('rajal',[maincontroller::class,'rajal']);
+#Frondend
 Route::get('login',[maincontroller::class,'login']);
 Route::post('dashboard',[maincontroller::class,'dashboard']);
 Route::get('user',[maincontroller::class,'user_new']);
-Route::get('tindakan_igd',[maincontroller::class,'in_igd']);
+Route::get('main',[maincontroller::class,'register']);
 
-
+#API
 Route::post('user_new',[crudcontroller::class,'user_add']);
 Route::get('user_get',[crudcontroller::class,'user_get_data']);
 Route::post('pasien_new',[crudcontroller::class,'patient_add']);
