@@ -44,6 +44,15 @@ class maincontroller extends Controller
 		return view ('rim');	
 	}
     
+    public function mcu(){
+		return view ('mcu');	
+	}
+
+     public function rekamedis(){
+		return view ('erekamedis');	
+	}
+    
+
     public function dashboard(Request $request) {
 
       $uname=$request->username;

@@ -18,7 +18,8 @@ Route::get('rajal',[maincontroller::class,'rajal']);
 Route::get('lims',[maincontroller::class,'laborat']);
 Route::get('pharmacy',[maincontroller::class,'farmasi']);
 Route::get('ris',[maincontroller::class,'radiologi']);
-Route::get('rajal',[maincontroller::class,'rajal']);
+Route::get('erm',[maincontroller::class,'rekamedis']);
+Route::get('mcu',[maincontroller::class,'mcu']);
 
 #Frondend
 Route::get('login',[maincontroller::class,'login']);
