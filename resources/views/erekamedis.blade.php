@@ -91,7 +91,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="/tindakan_igd" aria-expanded="false" aria-controls="tables">
-                <span class="menu-title">Form Tindakan Radiologi</span>
+                <span class="menu-title">Form Tindakan Rekam Medis</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
             </li>
@@ -205,7 +205,7 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Radiologi </h3>
+              <h3 class="page-title"> E - Rekam Medis </h3>
             </div>
             <div class="row">
               
