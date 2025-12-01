@@ -20,6 +20,9 @@ Route::get('pharmacy',[maincontroller::class,'farmasi']);
 Route::get('ris',[maincontroller::class,'radiologi']);
 Route::get('erm',[maincontroller::class,'rekamedis']);
 Route::get('mcu',[maincontroller::class,'mcu']);
+Route::get('fisio',[maincontroller::class,'rehap']);
+Route::get('surgery',[maincontroller::class,'operasi']);
+Route::get('darah',[maincontroller::class,'darah']);
 
 #Frondend
 Route::get('login',[maincontroller::class,'login']);

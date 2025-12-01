@@ -337,33 +337,36 @@
               </div>
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-info card-img-holder text-white">
+                   <a href="fisio" class="text-white nav-link">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">FISIOTERAPI<i class="mdi mdi-human-walker mdi-48px float-start"></i>
-                    </h4>
-                    
+                    </h4>  
                   </div>
+                  </a>
                 </div>
               </div>
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-success card-img-holder text-white">
+                  <a href="surgery" class="text-white nav-link">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">SURGERY | OK <i class="mdi mdi-heart-pulse mdi-48px float-start"></i>
-                    </h4>
-                    
+                    </h4>  
                   </div>
+                  </a>
                 </div>
               </div>
 
               <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-secondary card-img-holder text-white">
+                  <a href="darah" class="text-white nav-link">
                   <div class="card-body">
                     <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                     <h4 class="font-weight-normal mb-3">BANK DARAH <i class="mdi mdi-stethoscope mdi-48px float-start"></i>
                     </h4>
-                   
                   </div>
+                </a> 
                 </div>
               </div>
             </div>

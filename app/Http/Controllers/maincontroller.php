@@ -51,7 +51,18 @@ class maincontroller extends Controller
      public function rekamedis(){
 		return view ('erekamedis');	
 	}
+
+     public function rehap(){
+		return view ('fisio');	
+	}
     
+    public function operasi(){
+		return view ('surgery');	
+	}
+
+     public function darah(){
+		return view ('blood');	
+	}
 
     public function dashboard(Request $request) {
 

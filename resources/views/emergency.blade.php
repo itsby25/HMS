@@ -219,9 +219,9 @@
                           <div class="form-group">
                           <div class="form-group row">
                             <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Cari No RM Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <input type="text" id="textnorm" class="form-control" placeholder="Cari No RM Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
                               <div class="input-group-append">
-                                <button class="btn btn-sm btn-gradient-primary py-3" type="button">Search</button>
+                                <button id="carinorm" class="btn btn-sm btn-gradient-primary py-3" type="button" onclick="view()">Search</button>
                               </div>
                             </div>
                             </div>
@@ -232,9 +232,9 @@
                           <div class="form-group">
                           <div class="form-group row">
                             <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Cari Nama Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <input type="text" id="textnama" class="form-control" placeholder="Cari Nama Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
                               <div class="input-group-append">
-                                <button class="btn btn-sm btn-gradient-primary py-3" type="button">Search</button>
+                                <button id="caripasien" class="btn btn-sm btn-gradient-primary py-3" type="button">Search</button>
                               </div>
                             </div>
                             </div>
@@ -263,6 +263,24 @@
       </div>
       <!-- page-body-wrapper ends -->
     </div>
+    <script>
+      
+      function view()
+      {
+        var a = document.getElementById("textnorm").value;
+
+        $.ajax({
+          type:"GET",
+          url:"http://127.0.0.1:8000/pasien_get?norm="+a+"";
+          dataType:"JSON",
+          success:function(result){
+          console.log(result.all);
+          }  
+          })
+      }
+
+
+    </script>  
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
