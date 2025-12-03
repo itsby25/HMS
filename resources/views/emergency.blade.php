@@ -212,7 +212,7 @@
               <div class="col-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                    <form class="form-sample">
+                  
                       <p class="card-description"> DATA Pasien </p>
                       <div class="row">
                         <div class="col-md-3">
@@ -221,7 +221,7 @@
                             <div class="input-group">
                               <input type="text" id="textnorm" class="form-control" placeholder="Cari No RM Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
                               <div class="input-group-append">
-                                <button id="carinorm" class="btn btn-sm btn-gradient-primary py-3" type="button" onclick="view()">Search</button>
+                                <button id="carinorm" class="btn btn-sm btn-gradient-primary py-3" type="button" onclick="view_norm()">Search</button>
                               </div>
                             </div>
                             </div>
@@ -234,7 +234,7 @@
                             <div class="input-group">
                               <input type="text" id="textnama" class="form-control" placeholder="Cari Nama Pasien" aria-label="Recipient's username" aria-describedby="basic-addon2">
                               <div class="input-group-append">
-                                <button id="caripasien" class="btn btn-sm btn-gradient-primary py-3" type="button">Search</button>
+                                <button id="caripasien" class="btn btn-sm btn-gradient-primary py-3" type="button" onclick="view_nama()">Search</button>
                               </div>
                             </div>
                             </div>
@@ -242,10 +242,12 @@
                         </div>
                         
                       </div>
-                      
-                    </form>
                   </div>
                 </div>
+              </div>
+
+              <div id="datatable" class="col-12 grid-margin">
+
               </div>
             </div>
           </div>
@@ -264,20 +266,49 @@
       <!-- page-body-wrapper ends -->
     </div>
     <script>
-      
-      function view()
+
+       
+
+      $(document).ready(function() { 
+    	view_norm();
+      view_nama();
+      });
+
+
+      function view_norm()
       {
         var a = document.getElementById("textnorm").value;
+        const myElement = document.getElementById('datatable');
 
         $.ajax({
           type:"GET",
-          url:"http://127.0.0.1:8000/pasien_get?norm="+a+"";
+          url:"http://127.0.0.1:8000/pasien_get?norm="+a+"",
           dataType:"JSON",
-          success:function(result){
-          console.log(result.all);
+          success:function(response){
+            console.log(response);
+            const jsonData = JSON.stringify(response);
+            myElement.innerHTML =""+jsonData+"";
           }  
           })
       }
+
+      function view_nama()
+      {
+        var a = document.getElementById("textnama").value;
+        const myElement = document.getElementById('datatable');
+
+        $.ajax({
+          type:"GET",
+          url:"http://127.0.0.1:8000/pasien_get?nama="+a+"",
+          dataType:"JSON",
+          success:function(response){
+            console.log(response);
+            const jsonData = JSON.stringify(response);
+            myElement.innerHTML =""+jsonData+"";
+          }  
+          })
+      }
+
 
 
     </script>  
@@ -293,6 +324,8 @@
     <script src="../../assets/js/settings.js"></script>
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
