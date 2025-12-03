@@ -86,7 +86,7 @@ class crudcontroller extends Controller
 
     public function get_data_pasien(Request $request)
     {
-        $data_pasien= Pasien::Where('norm',$request->norm)->orWhere('nama',$request->nama)->get();
-        return $data_pasien->toJson();
+        $data_pasien=Pasien::Where('norm',$request->norm)->orWhere('nama',$request->nama)->get();
+        return json_decode($data_pasien,JSON_UNESCAPED_SLASHES);
     }
 }

@@ -286,8 +286,8 @@
           dataType:"JSON",
           success:function(response){
             console.log(response);
-            const jsonData = JSON.stringify(response);
-            myElement.innerHTML =""+jsonData+"";
+            //const jsonData = JSON.stringify(response);
+            myElement.innerHTML =""+response[0].nama+"";
           }  
           })
       }
