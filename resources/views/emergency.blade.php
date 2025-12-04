@@ -248,7 +248,7 @@
 
 
               <!--datatable-->
-              <div class="col-18 grid-margin">
+              <div id="card_pendaftaran" class="col-18 grid-margin">
                 <div class="card">
                   <div class="card-body">
                   
@@ -286,6 +286,70 @@
                           <button class="btn btn-sm btn-gradient-success py-3">Daftar</button>
                           <button class="btn btn-sm btn-gradient-danger py-3">Batal</button>
                         </div>   
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+
+              <!--datapasien IGD-->
+              <div id="card_list_pasien" class="col-18 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                  
+                      <p class="card-description"> Data Pasien IGD | Emergency </p>
+                      <div class="row table-responsive">
+                        <table class="table table-striped table-bordered table-hover order-column" border="1" width="100%">
+                                <thead class="btn-success">
+                                    <tr>
+                                       <th>
+                                            <center> No Registrasi / ID PEMERIKSAAN </center>
+                                        </th>	
+                                        <th>
+                                            <center> Norm </center>
+                                        </th>
+                                        <th>
+                                            <center> Nama Pasien </center>
+                                        </th>
+                                        <th>
+                                            <center> Tanggal </center>
+                                        </th>
+                                        <th>
+                                            <center> Jam </center>
+                                        </th>
+                                        <th>
+                                            <center> Nama Dokter </center>
+                                        </th>
+                                        <th>
+                                            <center> Poli </center>
+                                        </th>
+                                        <th>
+                                            <center> Penjamin </center>
+                                        </th>
+                                        <th>
+                                            <center> Status Asesmen Perawat </center>
+                                        </th>
+                                        <th>
+                                            <center> Status Asesmen Dokter </center>
+                                        </th>
+                                        <th>
+                                            <center> AKSI </center>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="listdatapasien">
+                                    <tr>
+                                        <td colspan="11">
+                                            <center><b>Tidak ada data</b></center>
+                                        </td>
+                                        <td colspan="1">
+                                            <p><button class="btn btn-sm btn-gradient-info py-3">Assestment Awal</button></p>
+                                            <p><button class="btn btn-sm btn-gradient-success py-3">Cetak Ringkasan</button></p>
+                                            <p><button class="btn btn-sm btn-gradient-success py-3">Cetak Resume</button></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>  
                       </div>
                     </div>    
                   </div>
