@@ -209,11 +209,11 @@
             </div>
             <div class="row">
               
-              <div class="col-12 grid-margin">
+              <div class="col-18 grid-margin">
                 <div class="card">
                   <div class="card-body">
                   
-                      <p class="card-description"> DATA Pasien </p>
+                      <p class="card-description">Pencarian DATA Pasien </p>
                       <div class="row">
                         <div class="col-md-3">
                           <div class="form-group">
@@ -246,7 +246,51 @@
                 </div>
               </div>
 
-              <div id="datatable" class="col-12 grid-margin">
+
+              <!--datatable-->
+              <div class="col-18 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                  
+                      <p class="card-description"> Pendaftaran IGD | Emergency </p>
+                      <div class="row">
+                        <table class="table table-striped table-bordered table-hover order-column" border="1" width="100%">
+                                <thead class="btn-success">
+                                    <tr>
+                                        <th>
+                                            <center> NO. RM </center>
+                                        </th>
+                                        <th>
+                                            <center> NIK </center>
+                                        </th>
+                                        <th>
+                                            <center> NAMA PASIEN </center>
+                                        </th>
+                                        <th>
+                                            <center> TANGGAL LAHIR / USIA </center>
+                                        </th>
+                                        <th>
+                                            <center> ALAMAT </center>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="datatable">
+                                    <tr>
+                                        <td colspan="5">
+                                            <center><b>Tidak ada data</b></center>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <div>
+                          <button class="btn btn-sm btn-gradient-success py-3">Daftar</button>
+                          <button class="btn btn-sm btn-gradient-danger py-3">Batal</button>
+                        </div>   
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
 
               </div>
             </div>
@@ -287,7 +331,7 @@
           success:function(response){
             console.log(response);
             //const jsonData = JSON.stringify(response);
-            myElement.innerHTML =""+response[0].nama+"";
+            myElement.innerHTML ="<td><center>"+response[0].norm+"</td><td><center>"+response[0].no_id+"</center></td><td><center>"+response[0].nama+"</center></td><td><center>"+response[0].tgl_lahir+"</center></td><td><center>"+response[0].alamat_domisili+"</center></td>";
           }  
           })
       }
@@ -303,8 +347,8 @@
           dataType:"JSON",
           success:function(response){
             console.log(response);
-            const jsonData = JSON.stringify(response);
-            myElement.innerHTML =""+jsonData+"";
+            //const jsonData = JSON.stringify(response);
+            myElement.innerHTML ="<td><center>"+response[0].norm+"</td><td><center>"+response[0].no_id+"</center></td><td><center>"+response[0].nama+"</center></td><td><center>"+response[0].tgl_lahir+"</center></td><td><center>"+response[0].alamat_domisili+"</center></td>";
           }  
           })
       }
