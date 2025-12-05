@@ -39,7 +39,8 @@
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
-  <body>
+  <body onload="startup()">
+  <!--<body>-->  
     <div class="container-scroller">
       <!-- partial:../../partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -253,7 +254,7 @@
                   <div class="card-body">
                   
                       <p class="card-description"> Pendaftaran IGD | Emergency </p>
-                      <div class="row">
+                      <div class="row table-responsive">
                         <table class="table table-striped table-bordered table-hover order-column" border="1" width="100%">
                                 <thead class="btn-success">
                                     <tr>
@@ -283,8 +284,8 @@
                                 </tbody>
                             </table>
                         <div>
-                          <button class="btn btn-sm btn-gradient-success py-3">Daftar</button>
-                          <button class="btn btn-sm btn-gradient-danger py-3">Batal</button>
+                          <button class="btn btn-sm btn-gradient-success py-3" onclick="daftar()">Daftar</button>
+                          <button class="btn btn-sm btn-gradient-danger py-3" onclick="startup()">Batal</button>
                         </div>   
                       </div>
                     </div>    
@@ -380,8 +381,19 @@
       $(document).ready(function() { 
     	view_norm();
       view_nama();
+      startup();
+      daftar();
       });
 
+      function startup()
+      {
+            document.getElementById("card_list_pasien").style.visibility = "hidden";
+      }
+
+      function daftar()
+      {
+              document.getElementById("card_list_pasien").style.visibility = "visible";
+      }
 
       function view_norm()
       {
@@ -398,6 +410,7 @@
             myElement.innerHTML ="<td><center>"+response[0].norm+"</td><td><center>"+response[0].no_id+"</center></td><td><center>"+response[0].nama+"</center></td><td><center>"+response[0].tgl_lahir+"</center></td><td><center>"+response[0].alamat_domisili+"</center></td>";
           }  
           })
+           
       }
 
       function view_nama()
