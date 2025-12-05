@@ -265,6 +265,9 @@
                                             <center> NIK </center>
                                         </th>
                                         <th>
+                                            <center> NOKA.BPJS </center>
+                                        </th>
+                                        <th>
                                             <center> NAMA PASIEN </center>
                                         </th>
                                         <th>
@@ -283,9 +286,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        <div>
+                        <div class="page-footer">
+                          
                           <button class="btn btn-sm btn-gradient-success py-3" onclick="daftar()">Daftar</button>
                           <button class="btn btn-sm btn-gradient-danger py-3" onclick="startup()">Batal</button>
+                          
                         </div>   
                       </div>
                     </div>    
@@ -298,7 +303,59 @@
                 <div class="card">
                   <div class="card-body">
                   
-                      <p class="card-description"> Data Pasien IGD | Emergency </p>
+                      <p class="card-description"> List Data Pasien IGD | Emergency </p>
+                      <div class="row table-responsive">
+                        <table class="table table-striped table-bordered table-hover order-column" border="1" width="100%">
+                                <thead class="btn-success">
+                                    <tr>
+                                       <th>
+                                            <center> No Registrasi / ID PEMERIKSAAN </center>
+                                        </th>	
+                                        <th>
+                                            <center> Norm </center>
+                                        </th>
+                                        <th>
+                                            <center> Nama Pasien </center>
+                                        </th>
+                                        <th>
+                                            <center> Tanggal </center>
+                                        </th>
+                                        <th>
+                                            <center> Jam </center>
+                                        </th>
+                                        <th>
+                                            <center> Nama Dokter </center>
+                                        </th>
+                                        <th>
+                                            <center> Penjamin </center>
+                                        </th>                                        
+                                        <th>
+                                            <center> AKSI </center>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="listdatapasien">
+                                    <tr>
+                                        <td colspan="7">
+                                            <center><b>Tidak ada data</b></center>
+                                        </td>
+                                        <td colspan="1">
+                                            <p><button class="btn btn-sm btn-gradient-info py-3">E-Medical Record</button></p>                                    
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>  
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+
+              <!--EMEDICAL RECORD
+              <div id="card_list_emr" class="col-18 grid-margin">
+                <div class="card">
+                  <div class="card-body">                 
+                      <p class="card-description"> E-Medical Record </p>
                       <div class="row table-responsive">
                         <table class="table table-striped table-bordered table-hover order-column" border="1" width="100%">
                                 <thead class="btn-success">
@@ -355,7 +412,8 @@
                     </div>    
                   </div>
                 </div>
-              </div>
+              </div>-->
+
 
               </div>
             </div>
@@ -388,6 +446,8 @@
       function startup()
       {
             document.getElementById("card_list_pasien").style.visibility = "hidden";
+            document.getElementById("card_pendaftaran").style.visibility = "hidden";
+            document.getElementById("card_list_emr").style.visibility = "hidden";
       }
 
       function daftar()
@@ -406,8 +466,9 @@
           dataType:"JSON",
           success:function(response){
             console.log(response);
+             document.getElementById("card_pendaftaran").style.visibility = "visible";
             //const jsonData = JSON.stringify(response);
-            myElement.innerHTML ="<td><center>"+response[0].norm+"</td><td><center>"+response[0].no_id+"</center></td><td><center>"+response[0].nama+"</center></td><td><center>"+response[0].tgl_lahir+"</center></td><td><center>"+response[0].alamat_domisili+"</center></td>";
+            myElement.innerHTML ="<td><center>"+response[0].norm+"</td><td><center>"+response[0].no_id+"</center></td><td><center>"+response[0].noka_BPJS+"</center></td><td><center>"+response[0].nama+"</center></td><td><center>"+response[0].tgl_lahir+"</center></td><td><center>"+response[0].alamat_domisili+"</center></td>";
           }  
           })
            
@@ -424,6 +485,7 @@
           dataType:"JSON",
           success:function(response){
             console.log(response);
+             document.getElementById("card_pendaftaran").style.visibility = "visible";
             //const jsonData = JSON.stringify(response);
             myElement.innerHTML ="<td><center>"+response[0].norm+"</td><td><center>"+response[0].no_id+"</center></td><td><center>"+response[0].nama+"</center></td><td><center>"+response[0].tgl_lahir+"</center></td><td><center>"+response[0].alamat_domisili+"</center></td>";
           }  
