@@ -330,7 +330,7 @@
                                             <center> Penjamin </center>
                                         </th>                                        
                                         <th>
-                                            <center> AKSI </center>
+                                            <center> TRIASE </center>
                                         </th>
                                     </tr>
                                 </thead>
@@ -340,7 +340,10 @@
                                             <center><b>Tidak ada data</b></center>
                                         </td>
                                         <td colspan="1">
-                                            <p><button class="btn btn-sm btn-gradient-info py-3">E-Medical Record</button></p>                                    
+                                            <p><button class="btn btn-sm btn-gradient-danger py-3">E-Medical Record</button></p>
+                                            <p><button class="btn btn-sm btn-gradient-warning py-3">E-Medical Record</button></p>
+                                            <p><button class="btn btn-sm btn-gradient-success py-3">E-Medical Record</button></p>
+                                            <p><button class="btn btn-sm btn-gradient-dark py-3">E-Medical Record</button></p>                                     
                                         </td>
                                     </tr>
                                 </tbody>

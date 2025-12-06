@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Users;
 use App\Models\Pasien;
+use App\Models\registrasi;
 use Illuminate\Http\Request;
 
 class crudcontroller extends Controller
@@ -82,6 +83,42 @@ class crudcontroller extends Controller
         echo("tersimpan");
         //return json_encode($data);
         
+    }
+
+    public function add_data_kunjungan(Request $request)
+    {
+         $urut=registrasi::all()->count();
+         $jam_kunjungan=DATE('dmY-his');
+        if ($urut < 9)
+        {
+            $noreg=$jam_kunjungan.$urut+1;
+
+        }
+        else
+        {
+            $noreg=$jam_kunjungan.$urut+1;
+        }
+        
+        $poli=$request->poli;
+        switch ($poli) {
+            case 'IGD':
+                $id_p=$poli;
+                break;
+            case 'POLI':
+                $id_p=$poli;
+                break;            
+            default:
+                $id_p=$poli;
+                break;
+        } 
+        $register= new registrasi();
+        $register->noregister = $id_p.$noreg;
+        $register->norm = $request->norm;
+        $register->save();
+
+
+        echo("tersimpan");
+
     }
 
     public function get_data_pasien(Request $request)
